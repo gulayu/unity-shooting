@@ -8,7 +8,20 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
+    <div style="font-size: 14px; margin: 10px 25%;">
+      <p style="margin: 0;">ゲームの概要：全4ステージの横シューティングゲームです。最終スコアを伸ばすことがゲームの目的となります。</p>
+      <p style="margin: 0;">・WASDで移動でき、自機は自動で弾を発射します。</p>
+      <p style="margin: 0;">・スペースキーを押すことで全方向に弾を連続発射するボムを使用できます（ゲーム開始時に3個所持）。</p>
+      <p style="margin: 0;">・自機は敵の弾に当たる or 敵に衝突でHPが減り、HPがなくなるとゲームオーバーとなります。</p>
+      <p style="margin: 0;">・敵機を撃破すると経験値が取得できる宝石をドロップします。経験値が一定値貯まるとレベルアップしボムを1つ獲得します。</p>
+      <p style="margin: 0;">・敵機は、撃破時に3%の確率で体力回復アイテムを、2%の確率でボム使用回数回復アイテムをドロップします。</p>
+      <p style="margin: 0;">・各ステージの最後に出現するボスは撃破時に自機の発射弾数を増加させるアイテムを確定でドロップします（自機の最大発射弾数は3）。</p>
+      <p style="margin: 0;">・（攻略のヒント）ボムは自機のレベルアップと敵機からのドロップがあるので、敵の数が多い時はボムの使用がおすすめです。</p>
+      <p style="margin: 0;">・（攻略のヒント）HP最大時に体力回復アイテムを獲得すると5000スコア獲得します。</p>
+      <p style="margin: 0;">・作者のクリア時のスコアは357000でした。</p>
+      <p style="margin: 0; color: red;">※ゲームコンティニュー時にそのステージから始められてしまうバグがあるので、コンティニュー時はスーパーリロードをお願いします...</p>
+    </div>
+    <div id="unity-container" class="unity-desktop" style="margin-top: 50px;">
       <canvas id="unity-canvas" width=960 height=540></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
